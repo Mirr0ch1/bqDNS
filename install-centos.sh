@@ -1,11 +1,11 @@
 #!/bin/bash
 echo '|-------------------Installing---------------------|'
-echo '|dnsmasq gcc openssl openssl-devel perl bind-utils |'
+echo '|            dnsmasq openssl bind-utils            |'
 echo '|--------------------------------------------------|'
 
 yum update -y
 yum groupinstall "Development Tools" -y
-yum install gcc openssl openssl-devel perl bind-utils -y
+yum install openssl bind-utils -y
 yum groupinstall "Development Libraries" -y
 yum install dnsmasq -y
 service dnsmasq stop
