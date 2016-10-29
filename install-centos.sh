@@ -3,6 +3,7 @@ echo '|-------------------Installing---------------------|'
 echo '|dnsmasq gcc openssl openssl-devel perl bind-utils |'
 echo '|--------------------------------------------------|'
 
+yum update -y
 yum groupinstall "Development Tools" -y
 yum install gcc openssl openssl-devel perl bind-utils -y
 yum groupinstall "Development Libraries" -y
