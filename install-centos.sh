@@ -38,6 +38,7 @@ sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 service firewalld stop
 chkconfig firewalld off
 service dnsmasq start
+chkconfig dnsmasq on
 
 echo '|-------------------COMPLETE-----------------------|'
 echo '|      The script was finish.Please Check!         |'
