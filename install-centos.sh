@@ -4,9 +4,9 @@ echo '|            dnsmasq openssl bind-utils            |'
 echo '|--------------------------------------------------|'
 
 yum update -y
-yum groupinstall "Development Tools" -y
+#yum groupinstall "Development Tools" -y
 yum install openssl bind-utils -y
-yum groupinstall "Development Libraries" -y
+#yum groupinstall "Development Libraries" -y
 yum install dnsmasq -y
 service dnsmasq stop
 
