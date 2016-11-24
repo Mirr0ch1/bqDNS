@@ -7,3 +7,5 @@ cd
 service dnsmasq restart
 
 echo "|----Process complete----|"
+
+rm -f update_dns_records.sh
