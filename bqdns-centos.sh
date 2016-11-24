@@ -46,4 +46,4 @@ echo '| bqDNS Project :https://github.com/Mirr0ch1/bqDNS |'
 echo '|      Thanks to molin1987 s PandaDNS Project      |'
 echo '|-------------------ENJOY IT!----------------------|'
 
-rm -f install-centos.sh
+rm -f bqdns-centos.sh
