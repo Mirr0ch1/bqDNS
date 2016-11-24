@@ -28,3 +28,5 @@ echo '|      The script was finish.Please Check!         |'
 echo '| bqDNS Project :https://github.com/Mirr0ch1/bqDNS |'
 echo '|      Thanks to molin1987 s PandaDNS Project      |'
 echo '|-------------------ENJOY IT!----------------------|'
+
+rm -f install-openwrt.sh
