@@ -11,9 +11,9 @@
 
 # 安装方法（Root Required）
 ## CentOS (6 / 7)
-`wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/install-centos.sh --no-check-certificate && bash install-centos.sh`
+`wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bqdns-centos.sh --no-check-certificate && bash bqdns-centos.sh`
 ## OpenWRT (14.07 or later)
-`wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/install-openwrt.sh --no-check-certificate && bash install-openwrt.sh`
+`wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bqdns-openwrt.sh --no-check-certificate && bash bqdns-openwrt.sh`
 
 # 更新域名记录配置文件
 `wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/update_dns_records.sh --no-check-certificate && bash update_dns_records.sh`
