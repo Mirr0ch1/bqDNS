@@ -13,8 +13,8 @@ echo "server=8.8.8.8" >> /etc/dnsmasq.conf
 echo "server=8.8.4.4" >> /etc/dnsmasq.conf
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
 cd /etc/dnsmasq.d
-wget --no-check-certificate https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
-wget --no-check-certificate https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf
+wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf --no-check-certificate
+wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf --no-check-certificate
 cd
 
 echo '|--------------------------------------------------|'
