@@ -13,6 +13,7 @@ echo "no-poll" >> /etc/dnsmasq.conf
 echo "server=8.8.8.8" >> /etc/dnsmasq.conf
 echo "server=8.8.4.4" >> /etc/dnsmasq.conf
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
+rm -rf /etc/dnsmasq.d
 mkdir /etc/dnsmasq.d
 cd /etc/dnsmasq.d
 curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
