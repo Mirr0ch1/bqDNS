@@ -4,7 +4,8 @@ echo '|-------------------Configuring--------------------|'
 echo '|..........rewrite the configuration file..........|'
 echo '|--------------------------------------------------|'
 
-
+opkg update
+opkg install curl -y
 rm -f /etc/dnsmasq.conf
 touch /etc/dnsmasq.conf
 echo "no-resolv" > /etc/dnsmasq.conf
@@ -14,8 +15,8 @@ echo "server=8.8.4.4" >> /etc/dnsmasq.conf
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
 mkdir /etc/dnsmasq.d
 cd /etc/dnsmasq.d
-wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf --no-check-certificate
-wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf --no-check-certificate
+curl -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
+curl -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf
 cd
 
 echo '|--------------------------------------------------|'
