@@ -5,7 +5,7 @@ echo '|..........rewrite the configuration file..........|'
 echo '|--------------------------------------------------|'
 
 opkg update
-opkg install curl -y
+opkg install curl
 rm -f /etc/dnsmasq.conf
 touch /etc/dnsmasq.conf
 echo "no-resolv" > /etc/dnsmasq.conf
