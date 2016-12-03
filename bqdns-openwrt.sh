@@ -15,8 +15,8 @@ echo "server=8.8.4.4" >> /etc/dnsmasq.conf
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
 mkdir /etc/dnsmasq.d
 cd /etc/dnsmasq.d
-curl -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
-curl -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf
+curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
+curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf
 cd
 
 echo '|--------------------------------------------------|'
