@@ -11,7 +11,7 @@ touch /etc/dnsmasq.conf
 echo "no-resolv" > /etc/dnsmasq.conf
 echo "no-poll" >> /etc/dnsmasq.conf
 echo "server=8.8.8.8" >> /etc/dnsmasq.conf
-echo "server=8.8.4.4" >> /etc/dnsmasq.conf
+echo "server=208.67.222.220" >> /etc/dnsmasq.conf
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
 rm -rf /etc/dnsmasq.d
 mkdir /etc/dnsmasq.d
