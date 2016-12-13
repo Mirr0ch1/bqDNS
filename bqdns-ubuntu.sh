@@ -35,8 +35,6 @@ cd
 echo '|-----------------Final treatment------------------|'
 echo '|--------Set SELinux and turn firewall off---------|'
 echo '|--------------------------------------------------|'
-setenforce 0
-sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 service dnsmasq start
 rm -f /etc/hosts
 mv /etc/hosts.bak /etc/hosts
