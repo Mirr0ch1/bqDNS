@@ -5,7 +5,7 @@ echo '|--------------------------------------------------|'
 
 yum update -y
 #yum groupinstall "Development Tools" -y
-yum install openssl bind-utils -y
+yum install curl -y
 #yum groupinstall "Development Libraries" -y
 yum install dnsmasq -y
 service dnsmasq stop
@@ -14,7 +14,7 @@ echo '|-------------------Configure----------------------|'
 echo '|..........rewrite the configuration file..........|'
 echo '|--------------------------------------------------|'
 
-
+echo "218.254.1.15  raw.githubusercontent.com" >> /etc/hosts
 rm -f /etc/dnsmasq.conf
 touch /etc/dnsmasq.conf
 echo "no-resolv" > /etc/dnsmasq.conf
@@ -39,6 +39,7 @@ service firewalld stop
 chkconfig firewalld off
 service dnsmasq start
 chkconfig dnsmasq on
+echo "127.0.0.1 localhost" > /etc/hosts
 
 echo '|-------------------COMPLETE-----------------------|'
 echo '|      The script was finish.Please Check!         |'
