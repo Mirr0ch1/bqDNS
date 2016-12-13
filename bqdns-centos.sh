@@ -25,8 +25,8 @@ echo "no-dhcp-interface=eth0" >> /etc/dnsmasq.conf
 echo "no-dhcp-interface=eth1" >> /etc/dnsmasq.conf
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
 cd /etc/dnsmasq.d
-wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
-wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf
+curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
+curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf
 cd
 
 
