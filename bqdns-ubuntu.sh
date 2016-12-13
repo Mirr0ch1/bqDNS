@@ -15,8 +15,8 @@ echo '|--------------------------------------------------|'
 
 
 rm -f /etc/dnsmasq.conf
-touch /etc/dnsmasq.conf
-echo "218.254.1.15  raw.githubusercontent.com" >> /etc/hosts
+mv /etc/hosts /etc/hosts.bak
+echo "218.254.1.15  raw.githubusercontent.com" > /etc/hosts
 echo "no-resolv" > /etc/dnsmasq.conf
 echo "no-poll" >> /etc/dnsmasq.conf
 echo "server=8.8.8.8" >> /etc/dnsmasq.conf
@@ -24,6 +24,8 @@ echo "server=208.67.222.220" >> /etc/dnsmasq.conf
 echo "no-dhcp-interface=eth0" >> /etc/dnsmasq.conf
 echo "no-dhcp-interface=eth1" >> /etc/dnsmasq.conf
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
+rm -rf /etc/dnsmasq.d
+mkdir /etc/dnsmasq.d
 cd /etc/dnsmasq.d
 curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
 curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf
@@ -36,7 +38,8 @@ echo '|--------------------------------------------------|'
 setenforce 0
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 service dnsmasq start
-echo "127.0.0.1 localhost" > /etc/hosts
+rm -f /etc/hosts
+mv /etc/hosts.bak /etc/hosts
 
 echo '|-------------------COMPLETE-----------------------|'
 echo '|      The script was finish.Please Check!         |'
