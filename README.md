@@ -23,5 +23,8 @@
 # 更新域名记录配置文件
 `wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/update_dns_records.sh --no-check-certificate && bash update_dns_records.sh`
 
+# 自动更新域名配置文件（Cronjob）
+`* * * */1 * wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/update_dns_records.sh --no-check-certificate && bash update_dns_records.sh`
+
 # 感谢名单
 @GFWList @GoogleHosts @PandaDNS ……
