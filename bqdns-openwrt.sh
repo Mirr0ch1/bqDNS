@@ -17,8 +17,10 @@ echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
 rm -rf /etc/dnsmasq.d
 mkdir /etc/dnsmasq.d
 cd /etc/dnsmasq.d
-curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/accchina.conf
-curl -O -k https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bin/modified.conf
+curl -O -k https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
+mv accelerated-domains.china.conf accchina.conf
+curl -O -k https://raw.githubusercontent.com/racaljk/hosts/master/dnsmasq.conf
+mv dnsmasq.conf modified.conf
 cd
 
 echo '|-----------------Final Treatments-----------------|'
