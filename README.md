@@ -21,10 +21,10 @@
 `wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/bqdns-openwrt.sh --no-check-certificate && sh bqdns-openwrt.sh`
 
 # 更新域名记录配置文件
-`wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/update_dns_records.sh --no-check-certificate && bash update_dns_records.sh`
+`wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/update_dns_records.sh --no-check-certificate && sh update_dns_records.sh`
 
 # 自动更新域名配置文件（Cronjob）
-`* * * */1 * wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/update_dns_records.sh --no-check-certificate && bash update_dns_records.sh`
+`* * * */1 * wget https://raw.githubusercontent.com/Mirr0ch1/bqDNS/master/update_dns_records.sh --no-check-certificate && sh update_dns_records.sh`
 
 # 感谢名单
-@GFWList @GoogleHosts @PandaDNS ……
+@GFWList @GoogleHosts @PandaDNS @racaljk ……
