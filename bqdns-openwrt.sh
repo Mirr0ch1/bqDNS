@@ -7,10 +7,9 @@ echo '|--------------------------------------------------|'
 opkg update
 opkg install curl
 rm -f /etc/dnsmasq.conf
-mv /etc/hosts /etc/hosts.bak
-echo "218.254.1.15  raw.githubusercontent.com" > /etc/hosts
 echo "no-resolv" > /etc/dnsmasq.conf
 echo "no-poll" >> /etc/dnsmasq.conf
+echo "server=1.0.0.1" >> /etc/dnsmasq.conf
 echo "server=8.8.8.8" >> /etc/dnsmasq.conf
 echo "server=208.67.222.220" >> /etc/dnsmasq.conf
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
@@ -26,8 +25,6 @@ cd
 echo '|-----------------Final Treatments-----------------|'
 echo '|............restarting dnsmasq service............|'
 echo '|--------------------------------------------------|'
-rm -f /etc/hosts
-mv /etc/hosts.bak /etc/hosts
 /etc/init.d/dnsmasq restart
 
 echo '|-------------------COMPLETE-----------------------|'
