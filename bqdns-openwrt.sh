@@ -18,8 +18,10 @@ mkdir /etc/dnsmasq.d
 cd /etc/dnsmasq.d
 curl -O -k https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
 mv accelerated-domains.china.conf accchina.conf
-curl -O -k https://raw.githubusercontent.com/racaljk/hosts/master/dnsmasq.conf
+curl -O -k https://github.com/googlehosts/hosts/raw/master/hosts-files/dnsmasq.conf
 mv dnsmasq.conf modified.conf
+curl -O -k https://github.com/felixonmars/dnsmasq-china-list/raw/master/apple.china.conf
+mv apple.china.conf apple.conf
 cd
 
 echo '|-----------------Final Treatments-----------------|'
